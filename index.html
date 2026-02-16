@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="background-color:#F7F7F7;">
+<body style="background-color:#F7F7F7;" class="d-flex flex-column min-vh-100" style="background: linear-gradient(135deg, #0d6efd,#6610f2);">
 
 <div class="container py-5">
   <div class="row align-items-center g-5">
@@ -17,11 +18,26 @@
       </h3>
     </div>
 
-    <div class="col-lg-6 text-center">
+    <div class="col-lg-6 text-center" height="10", width="20">
       <img src="/images/ChatGPT Image Feb 14, 2026, 10_43_31 AM.png" class="img-fluid rounded" alt="David" loading="lazy">
     </div>
   </div>
 </div>
+<!-- Coding Journey Section -->
+<section class="py-5 text-center" style="background-color:#F7F7F7;">
+  <div class="container">
+    <h2 class="fw-bold" style="color:#3B5998;">My Coding Journey</h2>
+    <p class="lead" style="color:#6C1D45;">
+      I started coding at a young age, exploring HTML, CSS, and JavaScript. Over the years, I’ve 
+      built websites, web applications, and experimented with full-stack development. 
+      Every project has taught me something new and fueled my passion for creating amazing digital experiences.
+    </p>
+    <div class="col-lg-6 mx-auto text-center">
+      <img src="images/coding.gif" alt="coding journey" class="img-fluid rounded" loading="lazy">
+    </div>
+  </div>
+</section>
+
 
 <section class="py-5 text-center" style="background-color:#DFE3EE;">
   <div class="container">
@@ -29,55 +45,152 @@
     <p class="lead">
       A collection of my recent projects and experiments.
     </p>
-    <a href="#" class="btn text-white me-2" style="background-color:#3B5998;">Main action</a>
-    <a href="#" class="btn" style="background-color:#8B9DC3;">Secondary</a>
-  </div>
+    
 </section>
 
-<div class="album py-5">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="/images/birthday.png" class="card-img-top" alt="Birthday project">
-          <div class="card-body">
-            <p class="card-text">Birthday website project built with HTML and CSS.</p>
-            <a href="#" class="btn btn-sm text-white" style="background-color:#3B5998;">View</a>
+<!-- Add Bootstrap Icons CDN in your <head> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+  <div class="album py-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+  
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="/images/birthday.png" class="card-img-top" alt="Birthday project">
+            <div class="card-body">
+              <p class="card-text">Birthday website project built with HTML and CSS.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/koech000/birthday-project" 
+                     class="btn btn-sm text-white" style="background-color:#3B5998;">
+                     <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://koech000.github.io/birthday-project" 
+                     class="btn btn-sm text-white" style="background-color:#8B9DC3;">
+                     <i class="bi bi-box-arrow-up-right"></i> Live
+                  </a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm h-100">
-          <img src="/images/coffee website.png" class="card-img-top" alt="Coffee project">
-          <div class="card-body">
-            <p class="card-text">Coffee shop website with modern UI.</p>
-            <a href="https://koech000.github.io/coffee-project/" 
-               class="btn btn-sm text-white"
-               style="background-color:#3B5998;">
-               Visit site
-            </a>
+  
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="/images/coffee website.png" class="card-img-top" alt="Coffee project">
+            <div class="card-body">
+              <p class="card-text">Coffee shop website with modern UI.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/Koech000/coffee-website-project" 
+                     class="btn btn-sm text-white" style="background-color:#3B5998;">
+                     <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://koech000.github.io/coffee-project/" 
+                     class="btn btn-sm text-white" style="background-color:#8B9DC3;">
+                     <i class="bi bi-box-arrow-up-right"></i> Live
+                  </a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-
-      <div class="col">
-        <div class="card shadow-sm h-100 w-80">
-          <img src="/images/flag-css-project.png" class="card-img-top" alt="Flag project">
-          <div class="card-body">
-            <p class="card-text">Pure CSS flag design project.</p>
-            <a href="https://koech000.github.io/kenyan-flag/" class="btn btn-sm text-white" style="background-color:#3B5998;">View</a>
+  
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <img src="/images/flag-css-project.png" class="card-img-top" alt="Flag project">
+            <div class="card-body">
+              <p class="card-text">Pure CSS flag design project.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="https://github.com/koech000/kenyan-flag" 
+                     class="btn btn-sm text-white" style="background-color:#3B5998;">
+                     <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://koech000.github.io/kenyan-flag/" 
+                     class="btn btn-sm text-white" style="background-color:#8B9DC3;">
+                     <i class="bi bi-box-arrow-up-right"></i> Live
+                  </a>
+                </div>
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
           </div>
         </div>
+  
       </div>
-
     </div>
-  </div>
-</div>
+    </div>
+  
+    <section class="py-5" style="background: linear-gradient(135deg, #0d6efd, #6610f2);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-5">
+    
+            <div class="card shadow-lg border-0 rounded-4">
+              <div class="card-body p-4">
+    
+                <h1 class="text-center mb-2">Contact Me</h1>
+                <p class="text-center text-muted mb-4">
+                  Have a project or want to work together? Let’s talk.
+                </p>
+    
+                <form action="#" method="post">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                  </div>
+    
+                  <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                  </div>
+    
+                  <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                  </div>
+    
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+    
+                <hr class="my-4">
+    
+                <div class="text-center">
+                  <p class="mb-1">
+                    Email:
+                    <a href="mailto:davidkimeli@email.com" class="text-decoration-none">
+                      davidkimeli@email.com
+                    </a>
+                  </p>
+                  <p class="mb-0">
+                    GitHub:
+                    <a href="https://github.com/Koech000" target="_blank" class="text-decoration-none">
+                      github.com/Koech000
+                    </a>
+                  </p>
+                </div>
+    
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+  
 
 <footer class="py-4 text-center" style="background-color:#3B5998; color:#FFFFFF;">
-  <p class="mb-0">© 2024 David's Personal Site</p>
+  <p class="mb-0">© 2026 David's Personal Site</p>
 </footer>
 
 </body>
